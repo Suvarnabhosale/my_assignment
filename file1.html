@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <script>
+  	
+  </script>
+
+
+</head>
+<body>
+	<div class="text-center">
+  <h1 id="h">DelphianLogic in Action</h1>
+  <p id="p1">Loren ipsum dolor sit amet,consectetuer adipiscing elit.Aenean commodo</p> 
+</div>
+	
+	
+
+	
+<div class="tab">
+  <button class="tablinks" onmouseover="openSlide(event, 'Learning','img1')">Learning</button>
+  <button class="tablinks" onmouseover="openSlide(event, 'Technology','img2')">Technology</button>
+  <button class="tablinks" onmouseover="openSlide(event, 'Communication','img3')">Communication</button>
+</div>
+
+
+
+<div class="tabcontent" id="Learning">
+  <center><p id="d1">Digital Learning Infrastructure</p>
+  <p id="d2">Usability enhancement and Training for Transaction Portal for Customers</p></center>
+<div><img src="DL-Learning-1.jpg" id="img1" class="responsive"></div>
+</div>
+
+
+
+  	
+<div  class="tabcontent" id="Technology">
+<center><p id="d1">Digital Technology Transformation</p>
+  <p id="d2">Maximzing the value of Incoming and Outging data as core business strategy</p></center>
+<img src="DL-Technology.jpg" id="img2" class="responsive">
+</div>
+   
+
+<div  class="tabcontent" id="Communication">
+<center><p id="d1">Digital Communication Infrastructure</p>
+<p id="d2"> Communication Infrastructure refers to backbone of the Communications system</p></center>
+<img src="DL-Communication - Copy.jpg" id="img3" class="responsive">
+</div>
+  
+
+<div class="clearfix"></div>
+
+
+
+
+
+<script>
+function openSlide(evt, slideName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(slideName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
